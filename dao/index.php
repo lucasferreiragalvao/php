@@ -20,7 +20,14 @@
 
     // echo $usuario;
 
-    $aluno = new Usuario("aluno","789");
-    $aluno->insert();
-    echo $aluno;
+    //Criando um novo usuário
+    // $aluno = new Usuario("aluno","789");
+    // $aluno->insert();
+    // echo $aluno;
+
+    //Atualizando Usuário
+    $usuario = new Usuario();
+    $usuario->loadById(10);
+    $usuario->update("professor1","123");
+    echo $usuario;
 ?>
