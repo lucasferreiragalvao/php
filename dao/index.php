@@ -26,8 +26,13 @@
     // echo $aluno;
 
     //Atualizando Usuário
+    // $usuario = new Usuario();
+    // $usuario->loadById(10);
+    // $usuario->update("professor1","123");
+    // echo $usuario;
+
     $usuario = new Usuario();
-    $usuario->loadById(10);
-    $usuario->update("professor1","123");
+    $usuario->loadById(8);
+    $usuario->delete();
     echo $usuario;
 ?>
